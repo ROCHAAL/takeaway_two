@@ -1,4 +1,4 @@
-require 'order'
+
 class TakeAway
 
   def initialize(menu:, order: nil)
@@ -11,7 +11,7 @@ class TakeAway
     menu.print
   end
 
-   p def place_order(dishes)
+    def place_order(dishes)
 
      dishes.each do |dish, quantity|
        order.add(dish, quantity)
