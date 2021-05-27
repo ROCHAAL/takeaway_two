@@ -9,10 +9,14 @@ class Order
   end
 
   def select_dishes(dish)
-      @menu =  ["curry"]
-   p @menu.each do |dish|
+      @menu =  ["curry", "bread", "onion"]
+
+      @menu.select { | dish| dish == dish }.include? dish
     @list.push(dish)
-  end
 
   end
+
 end
+
+# for each dishes in the menu push the selected ones into to the list.
+#  “for each dish given by the user that matches a dish on the menu, put it in the list”? (edited)
