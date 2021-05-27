@@ -4,10 +4,20 @@ class Takeaway
 
   def initialize
     @price = price
-    @dishes = []
+    @list = []
+    @dishes = dishes
   end
 
-  def see_a_list_of_dishes
-    "menu"
+  def order(dish)
+    @list.push(dish)
   end
 end
+
+#   def order(dish)
+#     dishes.select do |dish, price|
+#        @list.push(dish, price)
+#      end
+#   end
+# end
+
+# for each element of dishes push dish and price to the list
